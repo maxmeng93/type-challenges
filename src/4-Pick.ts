@@ -34,7 +34,7 @@
 
 /* _____________ 你的代码 _____________ */
 
-type MyPick<T, K> = any
+type MyPick<T, K extends keyof T> = { [P in K]: T[P] }
 
 
 /* _____________ 测试用例 _____________ */
