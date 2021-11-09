@@ -1,0 +1,66 @@
+{
+  // 引入其他配置文件，继承配置
+  // "extends": "",
+  // 编译选项
+  "compilerOptions": {
+    // 目标语言版本
+    "target": "esnext",
+    // 指定生成代码的模板标准
+    "module": "esnext",
+    // 严格模式
+    "strict": true,
+    "jsx": "preserve",
+    // 模块解析策略
+    "moduleResolution": "node",
+    // 跳过 .d.ts 文件类型检查
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "lib": [
+      "esnext", 
+      "dom", 
+      "dom.iterable", 
+      "scripthost"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    // 不允许隐式 any
+    // "noImplicitAny": false,
+    // 删除注释
+    // "removeComments": true,
+    // 保留 const 和 enum 声明
+    // "preserveConstEnums": false,
+    // 支持装饰器语法
+    "experimentalDecorators": true,
+    // 开启 null undefined 检测
+    // "strictNullChecks": false,
+    // 生成目标文件的 sourceMap 文件
+    "sourceMap": true,
+  },
+  // 指定需要编译的文件或目录
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  // 指定编译器需要排除的文件或目录
+  "exclude": [
+    "node_modules"
+  ],
+  // 指定待编译文件
+  // "files": [],
+  // 指定依赖的工程
+  // "references": [],
+  // 保存文件时自动编译，需要编译器支持
+  // "compileOnSave": false,
+  // 设置自动引入库类型定义文件(.d.ts)相关
+  // "typeAcquisition": {
+  //   "enable": false,
+  //   "exclude": ["jquery"],
+  //   "include": ["jest"]
+  // },
+}
